@@ -1,6 +1,4 @@
-const nomeText = document.querySelectorAll('nome-text')
-const roleText = document.querySelectorAll('role-text')
-const image = document.querySelectorAll('image')
+
 const cardContainer = document.getElementById('card-container')
 
 const team = [
