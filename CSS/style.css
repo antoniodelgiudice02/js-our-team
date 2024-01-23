@@ -22,4 +22,11 @@
     height: 50%;
     margin: 10px;
     padding: 20px;
+    overflow: hidden;
+}
+
+.image{
+    width: 50%;
+    object-fit: contain;
+    object-position: center;
 }

@@ -1,3 +1,8 @@
+const nomeText = document.querySelectorAll('nome-text')
+const roleText = document.querySelectorAll('role-text')
+const image = document.querySelectorAll('image')
+const cardContainer = document.getElementById('card-container')
+
 const team = [
   {
     name: 'Wayne Barnett',
@@ -31,7 +36,20 @@ const team = [
   },
 ];
 
-for(let i = 0; i < team.length; i++){
+function printDom(index) {
+  cardContainer.innerHTML += `
+  <div class="card">
+    <div class="text-center"><span class="nome-text">${team[index].name}</span></div>
+    <div class="text-center"><span class="role-text">${team[index].role}</span></div>
+    <div class="text-center"><img class="image" src="./img/${team[index].image}" alt=""></div>
+  </div>
+`
+}
+
+
+
+for (i = 0; i < team.length; i++) {
+  printDom(i);
   console.log(team[i].name)
   console.log(team[i].role)
   console.log(team[i].image)
